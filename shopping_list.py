@@ -23,6 +23,9 @@ show_help()
 while True:
     # ask for new items
     new_item = input("> ")
+    if new_item == "" or new_item == " ":
+        print('try again you didnt enter anything')
+        continue
     # quit app
     if new_item.upper() == 'DONE':
         break;
